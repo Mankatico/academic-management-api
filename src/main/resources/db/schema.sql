@@ -5,7 +5,8 @@ CREATE TABLE estudiante (
     documento       VARCHAR(20)  NOT NULL UNIQUE,
     email           VARCHAR(150) NOT NULL UNIQUE,
     fecha_nacimiento DATE,
-    created_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE materia (
